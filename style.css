@@ -1,5 +1,5 @@
 :root{
-    --cyan:#2bb8ff;
+    --cyan:#6aafcd;
 }
 *{
     font-family: 'Nunito', sans-serif;
@@ -35,7 +35,7 @@ html{
     font-size: 1.7rem;
 }
 .btn:hover{
-    background-color: rgb(13, 56, 70) ;
+    background-color: rgb(3, 45, 48) ;
     color: var(--cyan);
 }
 header{
@@ -43,7 +43,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background: #8f8f8f;
+    background: #4d4d4d;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -89,7 +89,7 @@ header .search-bar-container{
     left: 0;
     right: 0;
     padding: 1.5rem 2rem;
-    background: #8f8f8f;
+    background: #4d4d4d;
     border-top: .1rem solid rgba(255,255,255,.2);
     display: flex;
     align-items: center;
@@ -268,7 +268,7 @@ section{
 .home .controls{
     padding: 1rem;
     border-radius: 5rem;
-    background: rgba(155, 153, 153, 0.7);
+    background: #4d4d4d;
     position: relative;
     top: 10rem;
 }
@@ -514,7 +514,7 @@ section{
     width: 15rem;
 }
 .footer{
-    background: #8f8f8f;
+    background: #4d4d4d;
 }
 .footer .box-container{
     display: flex;
@@ -557,85 +557,6 @@ section{
 .footer .credit span{
     color: var(--cyan);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Media Queries */
 @media (max-width:1200px) {
@@ -690,5 +611,18 @@ section{
     }
     .contact .row form .inputBox input{
         width: 100%;
+    }
+}
+
+@media (max-width:360px) {
+    html{
+        font-size: 40%;
+    }
+    .contact .row form .inputBox input{
+        width: 100%;
+    }
+    .contact .row .img img{
+        width: 100%;
+        height: 300px;
     }
 }
