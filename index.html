@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Car Booking Website</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- awesome font link -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <div id="menu-bar" class="uil uil-bars"></div>
+      <a href="#" class="logo"><span class="logo-first">C</span>AR ARENA</a>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="icons">
+        <i class="uil uil-search" id="search-btn"></i>
+        <i class="uil uil-user" id="login-btn"></i>
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Search here..." />
+        <label for="search-bar" class="uil uil-search"></label>
+      </form>
+    </header>
+
+    <!-- header section -->
+
+    <!-- login form -->
+
+    <div class="login-form-container">
+      <i class="uil uil-times" id="form-close"></i>
+      <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email" />
+        <input type="password" class="box" placeholder="enter your password" />
+        <input type="submit" class="btn" value="login now" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember me</label>
+        <p>forget password?<a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+      </form>
+    </div>
+
+    <!-- home section -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>welcome to a luxury world!</h3>
+        <p>discover exotics cars with us, luxury awaits</p>
+        <a href="#" class="btn">discover more</a>
+      </div>
+
+      <div class="controls">
+        <span class="vid-btn active" data-src="static/vid1.mp4"></span>
+        <span class="vid-btn" data-src="static/vid2.mp4"></span>
+        <span class="vid-btn" data-src="static/vid3.mp4"></span>
+        <span class="vid-btn" data-src="static/vid4.mp4"></span>
+        <span class="vid-btn" data-src="static/vid5.mp4"></span>
+      </div>
+
+      <div class="video-container">
+        <video
+          src="static/vid1.mp4"
+          id="video-slider"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+    </section>
+
+    <!-- book section -->
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+      </h1>
+
+      <div class="row">
+        <div class="img">
+          <img src="static/car-book.jpg" alt="" />
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <h3>Location</h3>
+            <input type="text" placeholder="place name" />
+          </div>
+          <div class="inputBox">
+            <h3>Car Name</h3>
+            <input type="text" placeholder="car name" />
+          </div>
+          <div class="inputBox">
+            <h3>Departure</h3>
+            <input type="date" />
+          </div>
+          <div class="inputBox">
+            <h3>Return</h3>
+            <input type="date" />
+          </div>
+          <input type="submit" class="btn" value="book now" />
+        </form>
+      </div>
+    </section>
+
+    <!-- packages section  -->
+    <section class="packages" id="packages">
+      <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="static/img1.jpg" alt="" />
+          <div class="content">
+            <h3><i class="uil uil-car"></i>BMW</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Delectus, sed.
+            </p>
+            <div class="stars">
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+            </div>
+            <div class="price">₹15 lakh <span>₹30 lakh</span></div>
+            <a href="#" class="btn">Book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="static/img2.avif" alt="" />
+          <div class="content">
+            <h3><i class="uil uil-car"></i>Lamborghini</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Delectus, sed.
+            </p>
+            <div class="stars">
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+            </div>
+            <div class="price">₹15 lakh <span>₹30 lakh</span></div>
+            <a href="#" class="btn">Book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="static/img3.jpg" alt="" />
+          <div class="content">
+            <h3><i class="uil uil-car"></i>Rolls Royce</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Delectus, sed.
+            </p>
+            <div class="stars">
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+            </div>
+            <div class="price">₹15 lakh <span>₹30 lakh</span></div>
+            <a href="#" class="btn">Book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="static/img4.jpg" alt="" />
+          <div class="content">
+            <h3><i class="uil uil-car"></i>Bentley</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Delectus, sed.
+            </p>
+            <div class="stars">
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+            </div>
+            <div class="price">₹15 lakh <span>₹30 lakh</span></div>
+            <a href="#" class="btn">Book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="static/img5.jpg" alt="" />
+          <div class="content">
+            <h3><i class="uil uil-car"></i>Mini Cooper</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Delectus, sed.
+            </p>
+            <div class="stars">
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+            </div>
+            <div class="price">₹15 lakh <span>₹30 lakh</span></div>
+            <a href="#" class="btn">Book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="static/img6.jpeg" alt="" />
+          <div class="content">
+            <h3><i class="uil uil-car"></i>Ferrari</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Delectus, sed.
+            </p>
+            <div class="stars">
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+            </div>
+            <div class="price">₹15 lakh <span>₹30 lakh</span></div>
+            <a href="#" class="btn">Book now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <h1 class="heading">
+        <span>S</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="ui uil-car-sideview"></i>
+          <h3>affordable booking</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            perspiciatis neque dolor, recusandae velit voluptas eius corporis,
+            atque, accusamus doloremque eveniet asperiores debitis minima ipsam
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="ui uil-building"></i>
+          <h3>City Tour</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            perspiciatis neque dolor, recusandae velit voluptas eius corporis,
+            atque, accusamus doloremque eveniet asperiores debitis minima ipsam
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="ui uil-megaphone"></i>
+          <h3>Safety Guide</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            perspiciatis neque dolor, recusandae velit voluptas eius corporis,
+            atque, accusamus doloremque eveniet asperiores debitis minima ipsam
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="ui uil-globe"></i>
+          <h3>Around the World</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            perspiciatis neque dolor, recusandae velit voluptas eius corporis,
+            atque, accusamus doloremque eveniet asperiores debitis minima ipsam
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="ui uil-plane-departure"></i>
+          <h3>Fatest Travel</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            perspiciatis neque dolor, recusandae velit voluptas eius corporis,
+            atque, accusamus doloremque eveniet asperiores debitis minima ipsam
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="ui uil-mountains"></i>
+          <h3>Adventure</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            perspiciatis neque dolor, recusandae velit voluptas eius corporis,
+            atque, accusamus doloremque eveniet asperiores debitis minima ipsam
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+      <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="static/gallery1.webp" alt="" />
+          <div class="content">
+            <h3>Amazing Cars</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, cum?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="static/gallery2.jpg" alt="" />
+          <div class="content">
+            <h3>Amazing Cars</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, cum?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="static/gallery3.jpg" alt="" />
+          <div class="content">
+            <h3>Amazing Cars</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, cum?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="static/gallery4.webp" alt="" />
+          <div class="content">
+            <h3>Amazing Cars</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, cum?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="static/gallery5.jpg" alt="" />
+          <div class="content">
+            <h3>Amazing Cars</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, cum?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="static/gallery6.jpg" alt="" />
+          <div class="content">
+            <h3>Amazing Cars</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, cum?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="static/gallery7.jpg" alt="" />
+          <div class="content">
+            <h3>Amazing Cars</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, cum?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="static/gallery8.webp" alt="" />
+          <div class="content">
+            <h3>Amazing Cars</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, cum?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="static/gallery9.jpg" alt="" />
+          <div class="content">
+            <h3>Amazing Cars</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, cum?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review section -->
+    <section class="review" id="review">
+      <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+      </h1>
+      <div class="swiper mySwiper review-slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="static/pushpendra.jpg" alt="" />
+              <h3>Pushpendra Yadav</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis quibusdam tempora minima porro quam cupiditate omnis
+                accusamus reprehenderit neque voluptatum unde, quae minus
+                numquam mollitia labore corrupti perspiciatis dolorem ab.
+              </p>
+              <div class="stars">
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="static/alok.jpg" alt="" />
+              <h3>Alok Kumar Mishra</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis quibusdam tempora minima porro quam cupiditate omnis
+                accusamus reprehenderit neque voluptatum unde, quae minus
+                numquam mollitia labore corrupti perspiciatis dolorem ab.
+              </p>
+              <div class="stars">
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="static/prashant.jpg" alt="" />
+              <h3>Prashant Srivastav</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis quibusdam tempora minima porro quam cupiditate omnis
+                accusamus reprehenderit neque voluptatum unde, quae minus
+                numquam mollitia labore corrupti perspiciatis dolorem ab.
+              </p>
+              <div class="stars">
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="static/umang.jpg" alt="" />
+              <h3>Umang Sangadiya</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis quibusdam tempora minima porro quam cupiditate omnis
+                accusamus reprehenderit neque voluptatum unde, quae minus
+                numquam mollitia labore corrupti perspiciatis dolorem ab.
+              </p>
+              <div class="stars">
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+                <i class="uil uil-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+      </h1>
+
+      <div class="row">
+        <div class="img">
+          <img src="static/contact.png" alt="" />
+        </div>
+        <form action="">
+          <div class="inputBox">
+            <input type="text" placeholder="name" />
+            <input type="email" placeholder="email" />
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="number" />
+            <input type="text" placeholder="subject" />
+          </div>
+          <textarea
+            placeholder="message"
+            name=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" class="btn" value="send message" />
+        </form>
+      </div>
+    </section>
+
+    <!-- brand section -->
+    <section class="brand-container">
+      <div class="swiper mySwiper brand-slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide"><img src="static/brand1.png" alt="" /></div>
+          <div class="swiper-slide"><img src="static/brand2.png" alt="" /></div>
+          <div class="swiper-slide"><img src="static/brand3.png" alt="" /></div>
+          <div class="swiper-slide"><img src="static/brand4.png" alt="" /></div>
+          <div class="swiper-slide"><img src="static/brand5.png" alt="" /></div>
+          <div class="swiper-slide"><img src="static/brand6.png" alt="" /></div>
+          <div class="swiper-slide"><img src="static/brand7.png" alt="" /></div>
+          <div class="swiper-slide"><img src="static/brand8.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            quo voluptate non in consequuntur nam maxime ratione fugiat.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>branch locations</h3>
+          <a href="#">Noida</a>
+          <a href="#">bengaluru</a>
+          <a href="#">Pune</a>
+          <a href="#">Indore</a>
+          <a href="#">mumbai</a>
+        </div>
+
+        <div class="box">
+          <h3>Quick link</h3>
+          <a href="#home">home</a>
+          <a href="#book">book</a>
+          <a href="#packages">packages</a>
+          <a href="#services">services</a>
+          <a href="#gallery">gallery</a>
+          <a href="#review">review</a>
+          <a href="#contact">contact</a>
+        </div>
+
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">linkedIn</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+      <h1 class="credit">created by <span>Santosh</span>| all rights reserved!!</h1>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="main.js"></script>
+  </body>
+</html>
